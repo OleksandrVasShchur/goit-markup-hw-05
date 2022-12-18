@@ -126,10 +126,11 @@ img {
   margin-right: 40px;
 }
 .menu-item {
-  position: relative;
+
 }
 
 .text-style {
+  position: relative;
   display: block;
   padding-top: 24px;
   padding-bottom: 24px;
@@ -168,8 +169,10 @@ img {
   line-height: 1.5;
   color: var(--main-color-text);
 }
+.list-distance {
+  margin-left: 40px;
+}
 
-.text-top-efects,
 .text-top-efects {
   color: var(--main-color-text);
   padding-top: 24px;
@@ -179,9 +182,6 @@ img {
 .text-top-efects:hover,
 .text-top-efects:focus {
   color: var(--primary-brand);
-}
-.top-link-margin {
-  margin-left: 40px;
 }
 
 /* --------/логотип і навігація--------- */
@@ -505,6 +505,7 @@ img {
   width: 100%;
   height: 100%;
   background-color: rgba(46, 47, 66, 0.4);
+  transition: opacity var(--trans-der-and-func), visibility var(--trans-der-and-func);
 }
 
 .backdrop.is-hidden {
@@ -564,8 +565,11 @@ img {
  .main-box {
   padding-top: 96px;
   padding-bottom: 120px;
-}
-
+} 
+ .main-box {
+  padding-top: 96px;
+  padding-bottom: 120px;
+} 
 .portfolio-menu {
   display: flex;
   flex-direction: row;
@@ -653,7 +657,7 @@ img {
   background-color: #4d5ae5;
 }
 .list-link:hover .overlay,
-.list-link:hover .overlay {
+.list-link:focus .overlay {
   transform: translate(0, 0);
 }
 
